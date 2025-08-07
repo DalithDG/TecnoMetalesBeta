@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/image/Wallpape.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.listMenu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.listMenu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.listMenu a:hover {
+    color: #f50a0a;
+}
+
+.listMenu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.listMenu a:hover::after {
+    transform: scaleX(1);
+}
+
+.Contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.Contact-section h2 {
+    margin-bottom: 40px;
+}
+
+.Contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carta {
+    flex: 1 1 250px; 
+    max-width: 300px;
+    min-height: 350px;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/Image 1.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/Imagen 2.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/Imagen 3.jpg");
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/Imagen 4.jpg");
+}
+
+.carta h3 {
+    margin-bottom: 15px;
+}
+
+.carta p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.carta button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carta button:hover {
+    background-color: #d10000;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: auto; 
+}
